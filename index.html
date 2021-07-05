@@ -155,6 +155,7 @@ http://www.templatemo.com/tm-467-easy-profile
 			var x = document.getElementById("myDIV");
 			var profile = googleUser.getBasicProfile();
 			var name = profile.getId();
+			console.log(name);
 			if (list.includes(name)) {
 				x.style.display = "block";
 			} else {

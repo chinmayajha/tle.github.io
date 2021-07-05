@@ -3,10 +3,11 @@
 
 <head>
 	<meta charset="utf-8">
+	<meta name="google-signin-scope" content="profile email">
 	<meta name="google-signin-client_id"
 		content="796741857336-vsqkec6jh8ath6l21295kqks6974hsaj.apps.googleusercontent.com">
 	<script src="https://apis.google.com/js/platform.js" async defer></script>
-
+	</script>
 	<title>TLE Eliminators</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,6 +24,7 @@ http://www.templatemo.com/tm-467-easy-profile
 </head>
 
 <body data-spy="scroll" data-target=".navbar-collapse">
+
 
 	<!-- preloader section -->
 	<div class="preloader">
@@ -141,36 +143,24 @@ http://www.templatemo.com/tm-467-easy-profile
 	<!-- footer section -->
 	<!-- _____________________________________________________________________ -->
 	<script>
-		// function checks(googleUser) {
-		// 	var profile = googleUser.getBasicProfile();
-		// 	console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-		// 	console.log('Name: ' + profile.getName());
-		// 	console.log('Image URL: ' + profile.getImageUrl());
-		// 	console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
-		// }
 		var x = document.getElementById("myDIV");
 		x.style.display = "none";
-		if (auth2.isSignedIn.get()) {
-			var profile = auth2.currentUser.get().getBasicProfile();
-			console.log('ID: ' + profile.getId());
+	</script>
+	<div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+	<script>
+		function onSignIn(googleUser) {
+			// Useful data for your client-side scripts:
+			var profile = googleUser.getBasicProfile();
+			console.log("ID: " + profile.getId()); // Don't send this directly to your server!
 			console.log('Full Name: ' + profile.getName());
 			console.log('Given Name: ' + profile.getGivenName());
-			console.log('Image URL: ' + profile.getImageUrl());
-			console.log('Email: ' + profile.getEmail());
-			var list = ["Chinmay Jha", "Priyansh Agarwal"];
-			var x = document.getElementById("myDIV");
-			var profile = googleUser.getBasicProfile();
-			// var name = profile.getId();
-			console.log(profile.getName());
-			if (list.includes(profile.getName())) {
-				x.style.display = "block";
-			} else {
-				x.style.display = "none";
-			}
-		}
+			console.log('Family Name: ' + profile.getFamilyName());
+			console.log("Image URL: " + profile.getImageUrl());
+			console.log("Email: " + profile.getEmail());
 
-		function onSignIn(googleUser) {
-
+			// The ID token you need to pass to your backend:
+			var id_token = googleUser.getAuthResponse().id_token;
+			console.log("ID Token: " + id_token);
 		}
 	</script>
 	<button onclick="onSignIn()">Try it</button>

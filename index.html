@@ -38,11 +38,11 @@ http://www.templatemo.com/tm-467-easy-profile
 				<div class="col-md-12 col-sm-12">
 					<hr>
 					<h1 class="tm-title bold shadow">We exceed everything but the time limit.</h1>
-					<h1 class="white bold shadow">We are TLE Eliminators</h1>
+					<h1 class="white bold shadow">We are be Eliminators</h1>
 					<hr>
 				</div>
 			</div>
-			<div class="g-signin2" data-onsuccess="onSignIn" data-onfailure="onSignIn"></div>
+			<div class="g-signin2" data-onsuccess="onSignIn"></div>
 		</div>
 	</header>
 
@@ -150,17 +150,27 @@ http://www.templatemo.com/tm-467-easy-profile
 		// }
 		var x = document.getElementById("myDIV");
 		x.style.display = "none";
-		function onSignIn(googleUser) {
+		if (auth2.isSignedIn.get()) {
+			var profile = auth2.currentUser.get().getBasicProfile();
+			console.log('ID: ' + profile.getId());
+			console.log('Full Name: ' + profile.getName());
+			console.log('Given Name: ' + profile.getGivenName());
+			console.log('Image URL: ' + profile.getImageUrl());
+			console.log('Email: ' + profile.getEmail());
 			var list = ["Chinmay Jha", "Priyansh Agarwal"];
 			var x = document.getElementById("myDIV");
 			var profile = googleUser.getBasicProfile();
-			var name = profile.getId();
-			console.log(name);
-			if (list.includes(name)) {
+			// var name = profile.getId();
+			console.log(profile.getName());
+			if (list.includes(profile.getName())) {
 				x.style.display = "block";
 			} else {
 				x.style.display = "none";
 			}
+		}
+
+		function onSignIn(googleUser) {
+
 		}
 	</script>
 	<button onclick="onSignIn()">Try it</button>

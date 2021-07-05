@@ -140,13 +140,26 @@ http://www.templatemo.com/tm-467-easy-profile
 	<!-- footer section -->
 	<!-- _____________________________________________________________________ -->
 	<script>
+		// function checks(googleUser) {
+		// 	var profile = googleUser.getBasicProfile();
+		// 	console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+		// 	console.log('Name: ' + profile.getName());
+		// 	console.log('Image URL: ' + profile.getImageUrl());
+		// 	console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+		// }
+
 		function onSignIn() {
+			var list = ["Chinmay Jha", "Priyansh Agarwal"];
 			var x = document.getElementById("myDIV");
-			if (x.style.display === "none") {
+			var profile = googleUser.getBasicProfile();
+			var name = profile.getId();
+			if (list.includes(name)) {
 				x.style.display = "block";
 			} else {
 				x.style.display = "none";
 			}
+
+
 		}
 	</script>
 	<button onclick="onSignIn()">Try it</button>

@@ -44,7 +44,6 @@ http://www.templatemo.com/tm-467-easy-profile
 					<hr>
 				</div>
 			</div>
-			<div class="g-signin2" data-onsuccess="onSignIn"></div>
 		</div>
 	</header>
 
@@ -161,6 +160,16 @@ http://www.templatemo.com/tm-467-easy-profile
 			// The ID token you need to pass to your backend:
 			var id_token = googleUser.getAuthResponse().id_token;
 			console.log("ID Token: " + id_token);
+
+
+			var names = ["Chinmay Jha", "Priyansh Agarwal"];
+			if (names.includes(profile.getName())) {
+				var x = document.getElementById("myDIV");
+				x.style.display = "block";
+			} else {
+				var x = document.getElementById("myDIV");
+				x.style.display = "none";
+			}
 		}
 	</script>
 	<button onclick="onSignIn()">Try it</button>

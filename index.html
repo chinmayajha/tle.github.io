@@ -261,6 +261,7 @@ http://www.templatemo.com/tm-467-easy-profile
 				</div>
 		</section>
 		<br>
+		<button type="button" style="font-size: 20px; padding: 15px 32px;" onclick="signOut();">Sign Out</button>
 	</div>
 	<!-- TEMPLATE FOR NEW ROW -->
 	<!-- <section class="container">
@@ -276,8 +277,8 @@ http://www.templatemo.com/tm-467-easy-profile
 		var x = document.getElementById("myDIV");
 		x.style.display = "none";
 	</script>
-	<div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
-	<a href="#" onclick="signOut();">Sign out</a>
+	<div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark" style="margin: auto;"></div>
+
 
 	<script>
 		function onSignIn(googleUser) {
@@ -299,9 +300,11 @@ http://www.templatemo.com/tm-467-easy-profile
 			if (names.includes(profile.getName())) {
 				var x = document.getElementById("myDIV");
 				x.style.display = "block";
+				y.style.display = "block";
 			} else {
 				var x = document.getElementById("myDIV");
 				x.style.display = "none";
+				y.style.display = "none";
 			}
 		}
 		function signOut() {

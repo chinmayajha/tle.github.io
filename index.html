@@ -39,8 +39,8 @@ http://www.templatemo.com/tm-467-easy-profile
 			<div class="row">
 				<div class="col-md-12 col-sm-12">
 					<hr>
-					<h1 class="tm-title bold shadow">We exceed everything but the time limit.</h1>
-					<h1 class="white bold shadow">We are TLE Eliminators</h1>
+					<h1 class="tm-title bold shadow">Hey, </h1>
+					<h1 class="white bold shadow" id="nameID">We are TLE Eliminators</h1>
 					<hr>
 				</div>
 			</div>
@@ -290,7 +290,7 @@ http://www.templatemo.com/tm-467-easy-profile
 			console.log('Family Name: ' + profile.getFamilyName());
 			console.log("Image URL: " + profile.getImageUrl());
 			console.log("Email: " + profile.getEmail());
-
+			document.getElementById("nameID").innerHTML = profile.getGivenName();
 			// The ID token you need to pass to your backend:
 			var id_token = googleUser.getAuthResponse().id_token;
 			console.log("ID Token: " + id_token);

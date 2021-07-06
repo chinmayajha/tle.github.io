@@ -249,9 +249,19 @@ footer {
   padding: 0;
   margin: 0;
 }
+.button {
+    position: absolute;
+    top: 50%;
+}
 .social-icons li {
   display: inline-block;
   list-style: none;
+}
+button{
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .social-icons li a {
   border-radius: 50%;

@@ -138,7 +138,12 @@ h2 {
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg); } }
-
+button{
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
 /* header section */
 header {
   text-align: center;

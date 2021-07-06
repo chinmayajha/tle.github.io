@@ -8,10 +8,10 @@ video::-internal-media-controls-download-button {
     display:none; 
 } 
 button{
-position: relative;
-display: inline-block;
-left: 50%;
-transform: translateX(-50%);
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
 }
 html, body {
   margin:0;border:0;padding:0;

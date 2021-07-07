@@ -13,10 +13,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="">
 	<meta name="description" content="">
-	<!-- 
-Easy Profile Template
-http://www.templatemo.com/tm-467-easy-profile
--->
 	<!-- stylesheet css -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -24,16 +20,11 @@ http://www.templatemo.com/tm-467-easy-profile
 </head>
 
 <body data-spy="scroll" data-target=".navbar-collapse">
-
-
-	<!-- preloader section -->
 	<div class="preloader">
 		<div class="sk-spinner sk-spinner-wordpress">
 			<span class="sk-inner-circle"></span>
 		</div>
 	</div>
-
-	<!-- header section -->
 	<header>
 		<div class="container">
 			<div class="row">
@@ -43,12 +34,15 @@ http://www.templatemo.com/tm-467-easy-profile
 					<h1 class="white bold shadow">We are TLE Eliminators</h1>
 					<hr>
 					<h1 class="white bold shadow" id="nameID"></h1>
+					<br><br><br><br><br><br>
+					<button
+						class="ui teal circular button rounded-pill bg-primary text-white border-0 p-3 pl-4 pr-4 shadow_custom"
+						onclick="window.location='register.html';" id="BecomeMember">Become
+						a member</button>
 				</div>
 			</div>
 		</div>
 	</header>
-
-	<!-- about and skills section -->
 	<div id="myDIV">
 		<section class="container">
 			<div class="row">
@@ -246,11 +240,6 @@ http://www.templatemo.com/tm-467-easy-profile
 						<br><br><br>
 						<h3 class="accent">Announcement - 18th June 2021</h3>
 						<h2>Provisions of TLE (Discussion)</h2>
-						<!-- <p>Resources : <br><br>
-								<a href="https://youtu.be/c_VtKYeRZVk">YouTube</a> <br> <a
-									href="https://drive.google.com/file/d/1BgBXz1yEKNj5bxL1EMc1WLzoIkeOcxOI/view?usp=sharing">Google
-									Drive</a> <br>
-							</p> -->
 					</div>
 				</div>
 
@@ -264,19 +253,11 @@ http://www.templatemo.com/tm-467-easy-profile
 		<br>
 		<button type="button" style="font-size: 20px; padding: 15px 32px;" onclick="signOut();">Sign Out</button>
 	</div>
-	<!-- TEMPLATE FOR NEW ROW -->
-	<!-- <section class="container">
-		<div class="row">
-	
-	
-		</div>
-	</section> 
-	<br>	 -->
-	<!-- footer section -->
-	<!-- _____________________________________________________________________ -->
 	<script>
 		var x = document.getElementById("myDIV");
 		x.style.display = "none";
+		var y = document.getElementById("BecomeMember");
+		y.style.display = "block";
 	</script>
 	<div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark" style="margin: auto;"></div>
 
@@ -305,10 +286,14 @@ http://www.templatemo.com/tm-467-easy-profile
 				var x = document.getElementById("myDIV");
 				x.style.display = "block";
 				y.style.display = "block";
+				var z = document.getElementById("BecomeMember");
+				z.style.display = "none";
 			} else {
 				var x = document.getElementById("myDIV");
 				x.style.display = "none";
 				y.style.display = "none";
+				var z = document.getElementById("BecomeMember");
+				z.style.display = "block";
 			}
 		}
 		function signOut() {

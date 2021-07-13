@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/templatemo-blue.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body data-spy="scroll" data-target=".navbar-collapse">
@@ -25,8 +26,9 @@
             <span class="sk-inner-circle"></span>
         </div>
     </div>
-    <header>
+    <div class="g-signin2 container g-signin-btn" data-onsuccess="onSignIn" data-theme="dark" style="margin: auto;">Google</div>
 
+    <header>
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-sm-12">
@@ -37,8 +39,13 @@
                     <h1 class="white bold shadow" id="nameID"></h1>
 
                 </div><br>
-                <button type="button" style="font-size: 20px; padding: 15px 32px;" onclick="window.location='https://memboro.com/priyansh31dec';" id="BecomeMember" ;>Become a Member</button>
-
+                <button type="button" style="font-size: 20px; padding: 15px 32px;" onclick="newtab()" id="BecomeMember" ;>Become a Member</button>
+                <script>
+                     function newtab()
+                         {
+                           window.open('https://memboro.com/priyansh31dec', '_blank');
+                          }
+               </script>
             </div>
         </div>
     </header>
@@ -127,7 +134,7 @@
                         <h3 class="accent">PCD - 28th June 2021</h3>
                         <h2>Binary Search Contest #2</h2>
                         <p>Resources : <br><br>
-                            <a href="https://codeforces.com/group/q3u5Y0zcwk/contest/334324">Contest on CF </a><br>
+                            <a target="_blank" href="https://codeforces.com/group/q3u5Y0zcwk/contest/334324">Contest on CF </a><br>
                         </p>
                     </div>
                 </div>
@@ -147,7 +154,7 @@
                         <h3 class="accent">Class #4 - 26th June 2021</h3>
                         <h2>Binary Search (Advanced)</h2>
                         <p>Resources : <br><br>
-                            <a href="https://drive.google.com/file/d/19Yqi8m5DTDPnrXdJS_wG3ujOadf0rGYA/view">Slides
+                            <a target="_blank" href="https://drive.google.com/file/d/19Yqi8m5DTDPnrXdJS_wG3ujOadf0rGYA/view">Slides
 							</a><br>
                         </p>
                     </div>
@@ -167,7 +174,7 @@
                         <h3 class="accent">PCD - 22th June 2021</h3>
                         <h2>Binary Search Contest #1</h2>
                         <p>Resources : <br><br>
-                            <a href="https://codeforces.com/gym/333417">Contest on CF </a><br>
+                            <a target="_blank" href="https://codeforces.com/gym/333417">Contest on CF </a><br>
                         </p>
                     </div>
                 </div>
@@ -190,7 +197,7 @@
                             <!-- <a href="https://youtu.be/sEZ5P8xHRhQ">YouTube</a> <br> <a
 									href="https://drive.google.com/file/d/17ZnS4-gMKj4G_XWmUG7SKHwY45KUPglG/view?usp=sharing">Google
 									Drive</a> <br> -->
-                            <a href="https://drive.google.com/file/d/1IgJ1vIJ9iAD1kY6kIjeE_B35hysebWMV/view?usp=sharing">Slides</a>
+                            <a target="_blank" href="https://drive.google.com/file/d/1IgJ1vIJ9iAD1kY6kIjeE_B35hysebWMV/view?usp=sharing">Slides</a>
                         </p>
                     </div>
                 </div>
@@ -236,7 +243,7 @@
                         <h2>DP (Not for Beginners)</h2>
                         <p>Resources : <br><br>
                             <!-- <a href="https://youtu.be/2uMxX7UDHl8">YouTube</a> <br> -->
-                            <a href="https://docs.google.com/presentation/d/1Ji33agY83r2qGWPeJxafK808gWhaUv65J9wmwLxX0yQ/edit?usp=sharing">Slides</a>
+                            <a target="_blank" href="https://docs.google.com/presentation/d/1Ji33agY83r2qGWPeJxafK808gWhaUv65J9wmwLxX0yQ/edit?usp=sharing">Slides</a>
                         </p>
                     </div>
                 </div>
@@ -276,7 +283,7 @@
             y.style.display = "block";
         </script>
         <br><br><br>
-        <div class="g-signin2 container" data-onsuccess="onSignIn" data-theme="dark" style="margin: auto;"></div>
+
 
         <script src="gauth.js"></script>
         <script>
@@ -287,10 +294,10 @@
                     <div class="col-md-12 col-sm-12">
                         <p>Copyright &copy; 2021 Priyansh Agarwal</p>
                         <ul class="social-icons">
-                            <li><a href="https://www.discord.gg/p31d" class="">Discord | </a></li>
+                            <li><a target="_blank" href="https://www.discord.gg/p31d" class="">Discord | </a></li>
                             <!-- <li><a href="#" class="fa fa-google-plus"></a></li> -->
-                            <li><a href="https://www.instagram.com/priyansh_agarwal/" class="">Instagram | </a></li>
-                            <li><a href="https://www.youtube.com/c/PriyanshAgarwal" class="">YouTube</a></li>
+                            <li><a target="_blank" href="https://www.instagram.com/priyansh_agarwal/" class="">Instagram | </a></li>
+                            <li><a target="_blank" href="https://www.youtube.com/c/PriyanshAgarwal" class="">YouTube</a></li>
                         </ul>
                     </div>
                 </div>

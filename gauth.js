@@ -27,7 +27,7 @@ function onSignIn(googleUser) {
         "30julykush@gmail.com", "mohantynishanta@gmail.com", "talmiz1234@gmail.com", "shubhankar9817@gmail.com",
         "ashishpatna1936@gmail.com", "sasikanth.rayaprolu1234@gmail.com", "raghavjaipur00@gmail.com", "sai102789@gmail.com",
         "madhurtd14@gmail.com", "vanshikamattoo0105@gmail.com", "syedarifimam20@gmail.com", "preeti.pky@gmail.com", "bhavyammodi@gmail.com",
-        "smodak2000@gmail.com"
+        "smodak2000@gmail.com", "j.kamlesh8102@gmail.com"
     ]
     if (names.includes(profile.getName()) || emails.includes(profile.getEmail())) {
         var x = document.getElementById("myDIV");

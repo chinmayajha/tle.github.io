@@ -22,7 +22,7 @@ function onSignIn(googleUser) {
         "jiteshchawla1511@gmail.com", "akshitofficial09@gmail.com", "aman.amanjolly@gmail.com", "sourabhmiglani57@gmail.com",
         "bikashsahu252@gmail.com", "raswanthvijay007@gmail.com", "121dcabingoel@gmail.com", "dipeshpandey2001@gmail.com",
         "yashwanthrajlakumarapu@gmail.com", "nikmanhunter9@gmail.com", "ankitkesar01@gmail.com", "pilaniapiyush@gmail.com",
-        "ayushkansara@gmail.com", "ayushsingh41098@gmail.com", "prasham.16.b.fe@gmail.com", "bhatianishant763@gmail.com",
+        "ayushkansara@gmail.com", "aryan8op@gmail.com", "ayushsingh41098@gmail.com", "prasham.16.b.fe@gmail.com", "bhatianishant763@gmail.com",
         "pbpcodes@gmail.com", "abhishektripathi911@gmail.com", "18bansal.aman@gmail.com", "sumitjangid1692153@gmail.com",
         "30julykush@gmail.com", "mohantynishanta@gmail.com", "talmiz1234@gmail.com", "shubhankar9817@gmail.com",
         "ashishpatna1936@gmail.com", "sasikanth.rayaprolu1234@gmail.com", "raghavjaipur00@gmail.com", "sai102789@gmail.com",

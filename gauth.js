@@ -19,7 +19,7 @@ function onSignIn(googleUser) {
         "bhatianishant763@gmail.com", "pbpcodes@gmail.com", "abhishektripathi911@gmail.com", "18bansal.aman@gmail.com", "sumitjangid1692153@gmail.com", "30julykush@gmail.com", "mohantynishanta@gmail.com", "talmiz1234@gmail.com", "shubhankar9817@gmail.com", "ashishpatna1936@gmail.com", "sasikanth.rayaprolu1234@gmail.com", "raghavjaipur00@gmail.com",
         "sai102789@gmail.com", "madhurtd14@gmail.com", "vanshikamattoo0105@gmail.com", "syedarifimam20@gmail.com", "preeti.pky@gmail.com", "bhavyammodi@gmail.com", "smodak2000@gmail.com", "codewithvk256@gmail.com", "umar9897222@gmail.com", "yashporwal321@gmail.com", "misra.suyash12321@gmail.com", "j.kamlesh8102@gmail.com", "raswanthvijay007@gmail.com",
         "aryan8op@gmail.com", "2019sristi.sharma@ves.ac.in", "dnaha18@gmail.com", "orendon@gmail.com", "somanshusharma611@gmail.com", "rajat18078@iiitd.ac.in", "sai.manideep.360@gmail.com", "pkssfs1721@gmail.com", "vaibhavtiwari.ece17@nituk.ac.in", "abhishek.kvj.2@gmail.com", "devakarthik2222@gmail.com", "shyamsnair471@gmail.com",
-        "simransv1402@gmail.com", "edwinnreji@gmail.com", "raimohitrai11111@gmail.com", "bikashsahu252@gmail.com", "umnik11234@gmail.com"
+        "simransv1402@gmail.com", "adijha2905@gmail.com", "edwinnreji@gmail.com", "raimohitrai11111@gmail.com", "bikashsahu252@gmail.com", "umnik11234@gmail.com"
     ]
     if (names.includes(profile.getName()) || emails.includes(profile.getEmail())) {
         var x = document.getElementById("myDIV");

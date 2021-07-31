@@ -11,7 +11,7 @@ function onSignIn(googleUser) {
     // The ID token you need to pass to your backend:
     var id_token = googleUser.getAuthResponse().id_token;
     console.log("ID Token: " + id_token);
-    var names = ["Chinmay Jha", "Priyansh Agarwal", "Soham Ghoshal"];
+    var names = ["Chinmay Jha", "Priyansh Agarwal", "Soham Ghoshal", "Yogesh Kumar"];
     var manual_emails = ["sayskar500@gmail.com", "sg1192k@gmail.com", "tle.eliminators@gmail.com", "aryanmaskara@gmail.com", "angaleabhishek@gmail.com",
         "f20190282@goa.bits-pilani.ac.in", "yashjain0333@gmail.com", "rupinderg00@gmail.com", "keshavagarwal1710@gmail.com", "yuviaku@gmail.com", "paramk1508@gmail.com",
         "soum.choudhuri@gmail.com", "ykwbcps2@gmail.com"

@@ -14,7 +14,7 @@ function onSignIn(googleUser) {
     var names = ["Chinmay Jha", "Priyansh Agarwal", "Soham Ghoshal"];
     var manual_emails = ["sayskar500@gmail.com", "sg1192k@gmail.com", "tle.eliminators@gmail.com", "aryanmaskara@gmail.com", "angaleabhishek@gmail.com",
         "f20190282@goa.bits-pilani.ac.in", "yashjain0333@gmail.com", "rupinderg00@gmail.com", "keshavagarwal1710@gmail.com", "yuviaku@gmail.com", "paramk1508@gmail.com",
-        "soum.choudhuri@gmail.com"
+        "soum.choudhuri@gmail.com", "ykwbcps2@gmail.com"
     ]
     var emails = ["siraj19176@gmail.com", "tushar.taluja.2@gmail.com", "arnabmunshi200@gmail.com", "sai102789@gmail.com", "yashsahay999@gmail.com", "codewithvk256@gmail.com", "smodak2000@gmail.com", "bhavyammodi@gmail.com", "sharleenclement123@gmail.com", "sushmanthreddymereddy@gmail.com", "mohammedraqeeb9999@gmail.com",
         "i.there.hariomsingh@gmail.com", "orendon@gmail.com", "sarveshk21122001@gmail.com", "umnik11234@gmail.com", "dnaha18@gmail.com", "saxenatushar3010@gmail.com", "umar9897222@gmail.com", "divyanshu9upreti@gmail.com", "wasim7raja10@gmail.com", "somanshusharma611@gmail.com", "krishabh07022019@gmail.com", "ayush.01344@gmail.com",
